@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@import 'func-750.scss';
+@import 'reset.css';
+@import 'mcommon-750.scss';
+
+.header {
+  position: relative;
+  width: 100%;
+  height: rem(858);
+  background: url('{{imgDomain}}/m_header_bg@1x.jpg') no-repeat;
+  background: image-set( url('{{imgDomain}}/m_header_bg@1x.jpg') 1x, url('{{imgDomain}}/m_header_bg@2x.jpg') 2x ) no-repeat;
+  background-size: 100% 100%;
+  background: #89efdc;
+
+  h2 {
+    padding-top: rem(318);
+    height: rem(106);
+    line-height: rem(106);
+    text-align: center;
+    font-size: rem(75);
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.27);
+  }
+
+  &_desc {
+    margin-top: rem(40);
+    height: rem(76);
+    line-height: rem(38);
+    padding: 0 rem(30);
+    font-size: rem(27);
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.27);
+  }
+
+  &_company_enter {
+    display: block;
+    margin: rem(121) auto 0;
+    width: rem(243);
+    height: rem(66);
+    line-height: rem(66);
+    border-radius: rem(6);
+    background-color: #fff;
+    color: #3370FF;
+    text-align: center;
+    box-shadow: 0 1px 3px 0 rgba(45,66,176,0.5) inset;
+    font-size: rem(27);
+    font-family: "PingFangSC-Semibold";
+    // border: 1px solid rgba(255,255,255,1);
+    // box-sizing: border-box;
+  }
+}
+
+.service {
+  margin-top: rem(60);
+
+  h3 {
+    margin-bottom: rem(60);
+    line-height: rem(53);
+    font-size: rem(38);
+    font-weight: normal;
+    color: #222561;
+    text-align: center;
+  }
+
+  ul {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    padding: 0 rem(30) rem(13);
+    overflow: hidden;
+
+    li {
+      float: left;
+      position: relative;
+      padding-bottom: rem(42);
+      height: rem(103);
+      width: 50%;
+      overflow: hidden;
+    }
+  }
+
+  &_pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: rem(103);
+    height: rem(103);
+    // margin-right: rem(10);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &_cont {
+    height: rem(103);
+    // width: rem(212);
+    margin-left: rem(113);
+    overflow: hidden;
+
+    &_0 {
+      margin-right: rem(20);
+    }
+
+    h5 {
+      line-height: rem(42);
+      font-size: rem(30);
+      font-weight: normal;
+      color: #002059;
+    }
+
+    p {
+      height: rem(58);
+      line-height: rem(29);
+      overflow: hidden;
+      font-size: rem(21);
+      color: #667A9B;
+    }
+  }
+}
+
+.advantage {
+  margin-top: rem(60);
+  margin-bottom: rem(64);
+  h3 {
+    margin-bottom: rem(60);
+    line-height: rem(53);
+    color: #222561;
+    text-align: center;
+    font-size: rem(38);
+  }
+
+  ul {
+    padding: 0 rem(30);
+  }
+
+  li {
+    position: relative;
+    height: rem(217);
+    margin-bottom: rem(30);
+  }
+
+  &_pic {
+    position: absolute;
+    top: 0;
+    height: rem(204);
+    width: rem(204);
+
+    img {
+      position: absolute;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: rgba(0,133,222,1);
+      opacity: 0.0448; 
+    }
+  }
+
+  &_cont {
+    padding-top: rem(40);
+    h5 {
+      line-height: rem(42);
+      margin-bottom: rem(10);
+      font-size: rem(30);
+      color: #002059;
+    }
+    p {
+      line-height: rem(29);
+      font-size: rem(21);
+      color: #667A9B;
+    }
+  }
+
+  &_part_1,
+  &_part_3 {
+    .advantage_pic {
+      left: 0;
+
+    }
+
+    .advantage_cont {
+      margin-left: rem(234);
+    }
+  }
+
+  &_part_2,
+  &_part_4 {
+    .advantage_pic {
+      width: rem(200);
+      height: rem(200);
+      right: 0;
+    }
+
+    .advantage_cont {
+      margin-right: rem(234)
+    }
+  }
+
+  &_part_1 {
+    img {
+      width: rem(161.3);
+      height: rem(216.4);
+      top: rem(22.6);
+      left: rem(56.6);
+    }
+    .advantage_cont {
+      margin-left: rem(248)
+    }
+  }
+
+  &_part_2 {
+    img {
+      width: rem(158);
+      height: rem(217);
+      top: rem(-5);
+      right: rem(81);
+    }
+    .advantage_cont {
+      margin-right: rem(269)
+    }
+  }
+
+  &_part_3 {
+    img {
+      width: rem(177.6);
+      height: rem(205.6);
+      top: rem(19.4);
+      left: rem(47.4);
+    }
+    .advantage_cont {
+      margin-left: rem(254)
+    }
+  }
+
+  &_part_4 {
+    img {
+      width: rem(242.7);
+      height: rem(158);
+      top: rem(42);
+      right: rem(65.3);
+    }
+    .advantage_cont {
+      margin-right: rem(338)
+    }
+  }
+}

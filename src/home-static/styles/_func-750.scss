@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+$vm_fontsize: 16;
+
+@function rem($px) {
+  @return ($px / $vm_fontsize ) * 1rem;
+}
